@@ -1,0 +1,40 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:PageNavigation">
+
+
+    <Style TargetType="{x:Type local:NavButton}">
+
+
+        <Setter Property="Margin" Value="2"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:NavButton}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}">
+
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="50"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+
+                            <Image Grid.Row="0" Source="{TemplateBinding ImageSource}" Stretch="Uniform" Margin="2"/>
+                            <TextBlock Grid.Row="1" Text="{TemplateBinding Text}" TextAlignment="Center" TextWrapping="Wrap" Margin="2"/>
+                            <Rectangle Name="Line" Grid.RowSpan="2" Fill="Transparent" Stroke="RoyalBlue" StrokeDashArray="1,2" StrokeThickness="0"/>
+                        </Grid>
+                                                
+                    </Border>
+
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="StrokeThickness" TargetName="Line"  Value="1"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

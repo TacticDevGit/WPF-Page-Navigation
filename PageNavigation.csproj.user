@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\Accounts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\Landing.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Accounts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Bills.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Employees.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Files.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Landing.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Notes.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Reports.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Setting.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Themes\Generic.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>
